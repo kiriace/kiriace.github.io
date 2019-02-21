@@ -1,0 +1,12 @@
+---
+layout: blog
+---
+
+<div class="post-body">
+  <h1>{{ page.title }}</h1>
+  <span>{{ page.date | date: "%B %e, %Y" }}</span>
+  <p>
+    {{ content }}
+  </p>
+  {% include disqus.html %}
+</div>
